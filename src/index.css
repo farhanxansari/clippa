@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define the fonts that IntelliSense was complaining about */
+  --font-sans: "Inter", "ui-sans-serif", "system-ui", sans-serif;
+  --font-mono: "ui-monospace", "SFMono-Regular", "monospace";
+
+  /* Custom colors if you want them */
+  --color-indigo-600: #4f46e5;
+}
+
+/* Custom Scrollbar for the Extension */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-slate-200);
+  border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite'; // Ensure the v4 plugin is used
+import { resolve } from 'path';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(), // New v4 plugin
+  ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        background: resolve(__dirname, 'src/background.ts'),
+        content: resolve(__dirname, 'src/content.ts'),
+      },
+      output: {
+        // Prevents filenames like main-CJDcqrQn.css
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`, 
+      },
+    },
+  },
+});
