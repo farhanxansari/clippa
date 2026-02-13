@@ -5,6 +5,13 @@ For my own use i created **Clippa** taking inspiration from android clipboard.
 
 ---
 
+## 📸 Demo Preview
+
+![Clippa Demo](./demo.png)
+
+---
+
+
 ##  Features:
 
 -  **24-Hour Smart History**: Automatically cleans up old snippets to keep your list fresh.
