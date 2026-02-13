@@ -5,9 +5,9 @@ For my own use i created **Clippa** taking inspiration from android clipboard.
 
 ---
 
-## 📸 Demo Preview
+##  Demo Preview
 
-![Clippa Demo](./demo.png)
+![Clippa Demo](./public/demo.png)
 
 ---
 
